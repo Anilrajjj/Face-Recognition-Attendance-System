@@ -1,0 +1,22 @@
+# Python-related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# VSCode config
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.idea/
+
+# Environment variables
+.env

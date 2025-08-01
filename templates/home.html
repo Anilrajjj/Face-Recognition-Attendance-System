@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Face Recognition Attendance</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Face Recognition Attendance System</h1>
+        <a href="/start-webcam" class="button">Start Webcam</a>
+        <a href="/result" class="button">Download Attendance Report</a>
+        <form action="/revert" method="POST">
+            <button class="button revert">Revert</button>
+        </form>
+        <a href="/quit" class="button">Quit</a>
+    </div>
+</body>
+</html>

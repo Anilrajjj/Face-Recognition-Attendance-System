@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System - Webcam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance System - Webcam</h1>
+
+        <!-- Webcam Feed -->
+        <div class="webcam-feed">
+            <img src="{{ url_for('video_feed') }}" alt="Webcam Feed" style="width: 100%; border-radius: 10px; border: 2px solid #007bff;">
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <a href="{{ url_for('result') }}" class="button">Download Attendance Report</a>
+            
+            <a href="{{ url_for('quit_app') }}" class="button">Quit</a>
+        </div>
+    </div>
+</body>
+</html>
